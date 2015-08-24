@@ -12,9 +12,33 @@ h1 {
   font-size: 60;
   font-weight: lighter;
   color: white;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.content {
   position: absolute;
-  top: 10px;
-  left: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.description {
+  text-align: center;
+  width: 100%;
+}
+
+a, a:link, a:active, a:visited {
+  text-decoration: none;
+  color: #aaa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  margin-right: 15px;
+}
+
+a:last-child {
+  margin-right: 0;
 }
 
 #canvas {
