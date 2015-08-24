@@ -35,6 +35,11 @@ a, a:link, a:active, a:visited {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   margin-right: 15px;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: #fff;
 }
 
 a:last-child {

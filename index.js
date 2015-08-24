@@ -187,23 +187,3 @@ setInterval(function () {
     line.continue();
   });
 }, 50);
-
-// add fonts
-var elem = document.getElementById('fonts');
-var fonts = [
-  // "'Ubuntu', sans-serif;",
-  "'Poiret One', cursive;",
-  // "'Inconsolata', ;",
-  // "'Josefin Sans', sans-serif;",
-  // "'Play', sans-serif;",
-  // "'Quicksand', sans-serif;"
-];
-
-fonts.map(function (font) {
-  var e = document.createElement('div');
-  var a = document.createAttribute('style');
-  a.value = 'font-family: ' + font;
-  e.setAttributeNode(a);
-  e.innerText = 'matix.io';
-  elem.appendChild(e);
-});
