@@ -18,9 +18,9 @@ var Block = function (position, parent) {
     .attr('width', BLOCK_SIZE)
     .attr('height', BLOCK_SIZE)
     .style({
-      fill: '#111',
+      fill: '#333',
       strokeWidth: BLOCK_BORDER,
-      stroke: '#222',
+      stroke: '#111',
       opacity: 0
     });
 
