@@ -1,0 +1,102 @@
+<div class="page-intro">
+	<div class="header-spacer"></div>
+	<div id="splash-img" class="splash-img blur-preload" data-preload-image="/assets/splash-1.jpg"></div>
+	<div class="splash-content" id="splash-content">
+		<h2>Technology, simplified</h2>
+		<p><span class="font-normal">We build apps and websites that help hard-working people save precious time.</span>  These applications can eliminate hours of unnecessary data entry, reduce human error, and improve organization.</p>
+		<button data-scroll-to=".page-lets-build-something-beautiful">Learn more <div class="icon-background"><i class="ion-arrow-down-b"></i></div></button>
+	</div>
+</div>
+<div class="page-lets-build-something-beautiful">
+	<div class="wrapper lets-build-something-beautiful">
+		<h2>Let's build something beautiful.</h2>
+		<p>We believe technology can be infinitely complicated yet still be a joy to use.  We believe it can solve the most complex problems without creating headaches.  We believe it is as a problem solver and as an art form. <br /><span class="font-normal">We believe in technology.</span></p>
+		<div class="splash-img">
+			<button data-scroll-to=".page-how-can-we-help">Learn about our services <div class="icon-background"><i class="ion-arrow-down-b"></i></div></button>
+		</div>
+	</div>
+</div>
+<div class="page-how-can-we-help">
+	<div class="heading">
+		<h2>Our services</h2>
+		<p>We develop some of the most common applications businesses require.</p>
+	</div>
+	<div class="solutions">
+		<div class="solution">
+			<div class="icon">
+				<i class="ion-iphone"></i>
+			</div>
+			<div class="content">
+				<h3> Web &amp; Mobile Apps</h3>
+				<p><span class="font-normal">Have an app idea you want to bring to life?</span>  We use popular technologies to create apps that can be used on iPhone, Android and in a web browser.  We love making beautiful apps come to life!</p>
+			</div>
+		</div>
+		<div class="solution">
+			<div class="icon">
+				<i class="ion-cloud"></i>
+			</div>
+			<div class="content">
+				<h3>Integration &amp; Automation</h3>
+				<p><span class="font-normal">Need to automatically publish Google Ads reports to Microsoft Sharepoint? Want to gather data or information from the web?</span> We're experts in interacting with data on the internet. Ask us how we can help!</p>
+			</div>
+		</div>
+		<div class="solution">
+			<div class="icon">
+				<i class="ion-ios-cart"></i>
+			</div>
+			<div class="content">
+				<h3>E-Commerce</h3>
+				<p><span class="font-normal">Want to sell your products online?</span>  Let us help you with the complex technical problems so you can focus on selling!  Ask us how Shopify can help your online business avoid common issues with e-commerce.</p>
+			</div>
+		</div>
+		<div class="solution">
+			<div class="icon">
+				<i class="ion-android-open"></i>
+			</div>
+			<div class="content">
+				<h3>Websites</h3>
+				<p><span class="font-normal">Have a custom website design you need implemented?</span>  We know the web browser inside and out.  We'll take your design from concept to completion without using bulky softwares like Wordpress that will slow it down.</p>
+			</div>
+		</div>
+	</div>
+	<div class="get-in-touch">
+		<button data-scroll-to=".page-get-in-touch"><span>Have questions? </span> <div class="icon-background"><i class="ion-arrow-down-b"></i></div></button>
+	</div>
+</div>
+<!-- 
+<div class="page-3">
+	<div class="wrapper">
+		<div class="section-title">
+			<h2>Case studies</h2>
+			<p>Read about the people we've helped save time</p>
+		</div>
+		<div class="case-studies">
+		<% site.posts.forEach((post) => { %>
+			<% if (post.source.indexOf('_posts/case-studies') > -1) { %>
+				<div class="case-study">
+					<div class="banner" style="background-image: url(<%= (post.permalink + post.banner) %>)"></div>
+					<h3><%= post.title %></h3>
+					<p><%- post.preview %></p>
+					<button>Read more <div class="icon-background"><i class="ion-arrow-right-c"></i></div></button>
+				</div>
+			<% } %>
+		<% }) %>
+		</div>
+	</div>
+</div>
+-->
+<div class="page-get-in-touch">
+	<div class="wrapper">
+		<div class="title">
+			<h2>Get in touch</h2>
+			<p><span class="font-normal">We're waiting to chat about how we can bring your next project to life.</span></p>
+			<button onclick="Tawk_API.maximize()">Contact us now for a free consultation.</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		document.querySelector('#splash-content').setAttribute('data-show', 'true');
+	});
+</script>

@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/ionicons.min.css">
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+	</head>
+
+	<body>
+		<header>
+			<div class="header-left">
+				<img src="/assets/logo.svg" data-scroll-to=".page-intro">
+				<h1 data-scroll-to=".page-intro">matix.io</h1>
+			</div>
+			<div class="header-right">
+				<div id="menu-blocker" class="mobile-menu-blocker"></div>
+				<ul id="menu-items" class="menu">
+					<li data-scroll-to=".page-lets-build-something-beautiful">About Us</li>
+					<li data-scroll-to=".page-how-can-we-help">Our Services</li>
+					<li data-scroll-to=".page-get-in-touch">Get in Touch</li>
+				</ul>
+				<div id="mobile-menu-toggle" class="mobile-menu-toggles">
+					<i class="mobile-menu-open-button ion-navicon"></i>
+					<i class="mobile-menu-close-button ion-ios-arrow-up"></i>
+				</div>
+			</div>
+		</header>
+		<%- body %>
+		<script>
+		function ease (t) { 
+			return t<.5 ? 2*t*t : -1+(4-2*t)*t;
+		}
+
+		function getScrollTop() {
+			return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+		}
+
+		var preloads = document.querySelectorAll('.blur-preload');
+		preloads.forEach(function (preload) {
+			var src = preload.getAttribute('data-preload-image');
+			var img = new Image();
+			img.addEventListener('load', function () {
+				var innerDiv = '<div class="blur-preload-inner" style="background-image: url(' + src + ')"></div>';
+				preload.innerHTML = innerDiv;
+				preload.setAttribute('data-loaded', 'true');
+			});
+			img.src = src;
+		});
+
+		document.addEventListener('scroll', function () {
+			if (window.disableScrollEvents) return;
+			var scrollTop = getScrollTop();
+			var header = document.querySelector('header');
+
+			if (scrollTop > 0) {
+				header.setAttribute('data-small', 'true');
+			} else {
+				header.setAttribute('data-small', 'false');
+			}
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+
+			var isMenuOpen = false;
+			var isMenuPermanentlyOpen = false;
+
+			var get = function(id) { return document.getElementById(id); }
+
+			function getScrollTop() {
+				return (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+			}
+
+			var menuToggle = get('mobile-menu-toggle');
+			var menuItems = get('menu-items');
+			var menuBlocker = get('menu-blocker');
+			var splash = get('splash-img');
+
+			function toggleMenu () {
+				[menuItems, menuToggle, menuBlocker].forEach(function (el) {
+					el.setAttribute('data-open', isMenuOpen ? 'false' : 'true');
+				})
+				isMenuOpen = !isMenuOpen;
+			}
+
+			menuToggle.addEventListener('click', toggleMenu);
+
+			document.addEventListener('scroll', function () {
+				if (window.disableScrollEvents) return;
+				var scrollTop = getScrollTop();
+				menuItems.setAttribute('data-scrolled', scrollTop > 0 ? 'true' : 'false');
+
+				if (isMenuOpen) {
+					toggleMenu();
+				}
+
+				var val = (scrollTop > splash.offsetTop + splash.scrollHeight)
+
+				if (val !== isMenuPermanentlyOpen) {
+					menuBlocker.setAttribute('data-permanently-open', val);
+					menuItems.setAttribute('data-border-bottom', val);
+				}
+
+				isMenuPermanentlyOpen = val;
+			});
+
+			document.querySelectorAll('[data-scroll-to]').forEach(function (el) {
+				el.addEventListener('click', function (e) {
+					e.preventDefault();
+					e.stopPropagation();
+					window.disableScrollEvents = true;
+					var target = document.querySelector(el.getAttribute('data-scroll-to'));
+					target.scrollIntoView({ behavior: 'smooth' });
+					window.disableScrollEvents = false;
+					if (isMenuOpen) {
+						toggleMenu();
+					}
+				});
+			});
+		});
+		</script>
+
+	    <!--Start of Tawk.to Script-->
+	    <script type="text/javascript">
+	    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	    (function(){
+	    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	    s1.async=true;
+	    s1.src='https://embed.tawk.to/58a323eef90be509fee73211/default';
+	    s1.charset='UTF-8';
+	    s1.setAttribute('crossorigin','*');
+	    s0.parentNode.insertBefore(s1,s0);
+	    })();
+	    </script>
+	    <!--End of Tawk.to Script-->
+
+	    <script type="text/javascript">
+	    Tawk_API = Tawk_API || {};
+	    </script>
+	</body>
+</html>
