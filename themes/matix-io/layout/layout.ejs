@@ -1,10 +1,13 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/css/ionicons.min.css">
 		<meta charset="utf8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+		<title>matix.io - Technology, simplified.</title>
+		<link rel="icon" href="/assets/logo.png">
+		<meta name="google-site-verification" content="wMetinNtYlBWFjdbF7OjEHlKDXfYe46scNf_ThrNAr8" />
 	</head>
 
 	<body>
@@ -137,5 +140,27 @@
 	    <script type="text/javascript">
 	    Tawk_API = Tawk_API || {};
 	    </script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19253381-10"></script>
+
+		<script>
+			// prod only
+			if (window.location.hostname === 'matix.io') {
+				// hotjar
+			    (function(h,o,t,j,a,r){
+			        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			        h._hjSettings={hjid:1117187,hjsv:6};
+			        a=o.getElementsByTagName('head')[0];
+			        r=o.createElement('script');r.async=1;
+			        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			        a.appendChild(r);
+			    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+			    // ga 
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'UA-19253381-10');
+			}
+		</script>
 	</body>
 </html>

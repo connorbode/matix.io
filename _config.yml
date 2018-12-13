@@ -78,4 +78,4 @@ theme: matix-io
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: aws-s3

@@ -4,6 +4,9 @@ $width-tablet: 1000px;
 $width-mobile: 700px;
 $width-mobile-sm: 450px;
 
+$header-height: 105px;
+$header-height-small: 50px;
+
 @mixin tablet {
 	@media (max-width: #{$width-tablet}) {
 		@content;
@@ -22,6 +25,19 @@ $width-mobile-sm: 450px;
 	}
 }
 
+
+a {
+	@mixin link {
+		text-decoration: underline;
+		color: black;
+	}
+
+	@include link;
+
+	&:visited, &:active, &:link {
+		@include link;
+	}
+}
 
 
 html, body {
@@ -77,9 +93,6 @@ ul {
 
 body {
 	background: white;
-
-	$header-height: 105px;
-	$header-height-small: 50px;
 	$transition: 0.5s ease-in-out;
 
 	header {
@@ -902,3 +915,6 @@ body {
 		}
 	}
 }
+
+@import "_code.scss";
+@import "_post.scss";

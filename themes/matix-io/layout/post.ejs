@@ -1,0 +1,29 @@
+---
+layout: layout
+---
+
+<div class="post">
+	<div class="top-wrapper">
+		<div class="splash blur-preload" data-preload-image="<%- page.banner_lg %>" style="background-image: url(<%- page.banner_sm %>)"></div>
+		<div class="meta">
+			<h1><%- page.title %></h1>
+			<div class="date"><%- page.date.format('LL') %></div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="content">
+			<%- page.content %>
+		</div>
+	</div>
+	<div id="need-a-developer" class="need-a-developer">
+		Need a developer?  Get in touch with us now!
+	</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	document.getElementById('need-a-developer').addEventListener('click', function () {
+		Tawk_API.maximize();
+	});
+});
+</script>
