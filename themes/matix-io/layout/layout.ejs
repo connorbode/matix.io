@@ -97,7 +97,7 @@
 					toggleMenu();
 				}
 
-				var val = (scrollTop > splash.offsetTop + splash.scrollHeight)
+				var val = (scrollTop > splash.offsetTop + splash.scrollHeight - menuBlocker.scrollHeight)
 
 				if (val !== isMenuPermanentlyOpen) {
 					menuBlocker.setAttribute('data-permanently-open', val);

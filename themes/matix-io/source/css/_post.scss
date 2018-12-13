@@ -78,4 +78,50 @@
 		line-height: 90px;
 		cursor: pointer;
 	}
+
+	@include tablet {
+		.top-wrapper {
+			display: flex;
+			flex-direction: column-reverse;
+			height: 500px;
+
+			.meta {
+				width: 100%;
+				height: auto;
+				border-top: 1px solid #efefef;
+
+				.date, h1 {
+					max-width: 800px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 100%;
+				}
+
+				.date {
+					margin-bottom: 0;
+				}
+			}
+
+			.splash {
+				height: 100px;
+				flex-grow: 1;
+				position: static;
+				width: 100%;
+				border-radius: 0;
+			}
+		}
+
+		.wrapper {
+			box-shadow: none;
+			margin-top: 0;
+		}
+	}
+
+	@include mobile {
+		.top-wrapper {
+			.meta {
+				margin-top: $header-height-small;
+			}
+		}
+	}
 }
