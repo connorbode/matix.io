@@ -155,18 +155,22 @@ body {
 				list-style-type: none;
 				height: 100%;
 
-				li {
-					display: inline-block;
-					vertical-align: middle;
-					font-family: $font-family;
-					font-weight: 100;
-					line-height: $header-height;
-					margin-right: 20px;
-					transition: line-height #{$transition};
-					cursor: pointer;
+				a {
+					li {
+						display: inline-block;
+						vertical-align: middle;
+						font-family: $font-family;
+						font-weight: 100;
+						line-height: $header-height;
+						margin-right: 20px;
+						transition: line-height #{$transition};
+						cursor: pointer;
+					}
 
 					&:last-child {
-						margin-right: 40px;
+						li {
+							margin-right: 40px;
+						}
 					}
 				}
 			}
@@ -244,11 +248,13 @@ body {
 						border-bottom: 1px solid #efefef;
 					}
 
-					li {
-						height: $header-height-small;
-						line-height: $header-height-small;
+					a {
+						li {
+							height: $header-height-small;
+							line-height: $header-height-small;
+						}
 
-						&:last-child {
+						&:last-child li {
 							margin-right: 0;
 						}
 					}
@@ -284,7 +290,7 @@ body {
 			.header-right {
 				height: $header-height-small;
 
-				ul li {
+				ul a li {
 					line-height: $header-height-small;
 				}
 			}

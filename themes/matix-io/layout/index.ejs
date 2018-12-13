@@ -1,6 +1,9 @@
 ---
 layout: layout
+links: scroll
 ---
+
+<%- include('_partials/header.ejs', {scrollLinks: true}) %>
 <div class="page-intro">
 	<div class="header-spacer"></div>
 	<div id="splash-img" class="splash-img blur-preload" data-preload-image="/assets/splash-1.jpg"></div>
@@ -10,7 +13,7 @@ layout: layout
 		<button data-scroll-to=".page-lets-build-something-beautiful">Learn more <div class="icon-background"><i class="ion-arrow-down-b"></i></div></button>
 	</div>
 </div>
-<div class="page-lets-build-something-beautiful">
+<div id="about-us" class="page-lets-build-something-beautiful">
 	<div class="wrapper lets-build-something-beautiful">
 		<h2>Let's build something beautiful.</h2>
 		<p>We believe technology can be infinitely complicated yet still be a joy to use.  We believe it can solve the most complex problems without creating headaches.  We believe it is as a problem solver and as an art form. <br /><span class="font-normal">We believe in technology.</span></p>
@@ -19,7 +22,7 @@ layout: layout
 		</div>
 	</div>
 </div>
-<div class="page-how-can-we-help">
+<div id="our-services" class="page-how-can-we-help">
 	<div class="heading">
 		<h2>Our services</h2>
 		<p>We develop some of the most common applications businesses require.</p>
@@ -88,7 +91,7 @@ layout: layout
 	</div>
 </div>
 -->
-<div class="page-get-in-touch">
+<div id="get-in-touch" class="page-get-in-touch">
 	<div class="wrapper">
 		<div class="title">
 			<h2>Get in touch</h2>

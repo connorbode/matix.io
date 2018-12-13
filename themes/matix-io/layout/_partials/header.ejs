@@ -1,0 +1,18 @@
+<header>
+	<div class="header-left">
+		<img src="/assets/logo.svg" <%- (scrollLinks ? 'data-scroll-to=".page-intro"' : '') %>>
+		<h1 <%- (scrollLinks ? 'data-scroll-to=".page-intro"' : '') %>>matix.io</h1>
+	</div>
+	<div class="header-right">
+		<div id="menu-blocker" class="mobile-menu-blocker"></div>
+		<ul id="menu-items" class="menu">
+			<a href="/#about-us"><li <%- (scrollLinks ? 'data-scroll-to=".page-lets-build-something-beautiful"' : '') %>>About Us</li></a>
+			<a href="/#our-services"><li <%- (scrollLinks ? 'data-scroll-to=".page-how-can-we-help"' : '') %>>Our Services</li></a>
+			<a href="/#get-in-touch"><li <%- (scrollLinks ? 'data-scroll-to=".page-get-in-touch"' : '') %>>Get in Touch</li></a>
+		</ul>
+		<div id="mobile-menu-toggle" class="mobile-menu-toggles">
+			<i class="mobile-menu-open-button ion-navicon"></i>
+			<i class="mobile-menu-close-button ion-ios-arrow-up"></i>
+		</div>
+	</div>
+</header>
