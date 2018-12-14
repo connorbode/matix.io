@@ -1,3 +1,9 @@
+<%
+	var title = page.title ? `${page.title} - matix.io` : 'matix.io - Technology, simplified.';
+	var description = page.seo_description || "We build apps and websites that eliminate hours of manual work, helping you save precious time. Let's build something beautiful, together.";
+	var ogTitle = page.title || 'Technology, simplified.';
+	var banner = page.banner_sm ? `${page.permalink}${page.banner_sm}` : 'https://matix.io/assets/splash-1.jpg';
+%>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -5,9 +11,14 @@
 		<link rel="stylesheet" type="text/css" href="/css/ionicons.min.css">
 		<meta charset="utf8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-		<title>matix.io - Technology, simplified.</title>
+		<meta name="description" content="<%= description %>" />
+		<title><%= title %></title>
 		<link rel="icon" href="/assets/logo.png">
 		<meta name="google-site-verification" content="wMetinNtYlBWFjdbF7OjEHlKDXfYe46scNf_ThrNAr8" />
+		<meta property="og:title" content="<%= ogTitle %>">
+		<meta property="og:description" content="<%= description %>">
+		<meta property="og:image" content="<%= banner %>">
+		<meta property="og:url" content="<%= page.permalink || 'https://matix.io' %>">
 	</head>
 
 	<body>

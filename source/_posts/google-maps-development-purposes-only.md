@@ -4,6 +4,7 @@ banner_lg: banner-lg.png
 banner_sm: banner-sm.png
 date: 2018-12-12 20:19:14
 tags:
+seo_description: Google Maps API recently introduced pricing changes causing many websites to render unusable maps that look unprofessional. Let's fix the problem.
 ---
 
 
