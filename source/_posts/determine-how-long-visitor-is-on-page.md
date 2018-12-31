@@ -74,3 +74,5 @@ In the pages you want to track, you can include the following Javascript.  The e
 	})
 })();
 ```
+
+Hope this helps with your tracking needs!  Of course, the easier shortcut is to use something like Google Analytics which will do it out of the box for you.
