@@ -79,3 +79,7 @@ theme: matix-io
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: aws-s3
+
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap.xml
