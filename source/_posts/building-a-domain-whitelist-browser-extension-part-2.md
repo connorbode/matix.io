@@ -1,10 +1,12 @@
 ---
 title: Building a domain whitelist browser extension (part 2)
-banner_lg:
-banner_sm:
-seo_description:
+banner_lg: splash-lg.jpg
+banner_sm: splash-sm.jpg
+date: 2019-02-05 13:11:04
 tags:
+seo_description:
 ---
+
 
 In the last part of this series, we started creating a browser whitelist. If you haven't read that series, [get caught up!](https://matix.io/building-a-domain-whitelist-browser-extension).
 
