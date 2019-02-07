@@ -48,6 +48,6 @@ This port scan will show open ports on the IP, and `nmap` will attempt to identi
 
 # Shodan
 
-[Shodan](shodan.io) is a great tool that will give you all of this information if you just enter an IP address. If you're looking to attain information on a single IP address quick, this is the way to go. 
+[Shodan](https://shodan.io) is a great tool that will give you all of this information if you just enter an IP address. If you're looking to attain information on a single IP address quick, this is the way to go. 
 
 If you want to enumerate many IPs, you'll need to purchase a subscription ([priced by number of IPs per month](https://developer.shodan.io/pricing)). If budget is a concern, a custom solution may be a better option.
