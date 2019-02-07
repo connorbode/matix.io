@@ -123,12 +123,12 @@ The next job is to map the verticies on the logo.  Luckily, SVG actually has tha
 
 Here's an excerpt from the SVG file:
 
-```xml
+```html
 <g id="Logo" transform="translate(40.000000, 32.000000)">
     <circle id="Oval" cx="39.75" cy="6.25" r="6.25"></circle>
     <polygon id="Path-3" points="0.74609375 43.8305664 14.7998047 21.4208984 19.75 25.8388672 28.6005859 7.48681641 40.6313477 30.5258789 46.0546875 21.4208984 50.8525391 28.7363281 55.0625 21.4208984 68.9990234 43.8305664"></polygon>
 </g>
-``` 
+```
 
 Let's pull those points out and add them to the JS:
 
