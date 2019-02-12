@@ -55,8 +55,9 @@ However, this is going to give us some information we don't want.
 Look at the output of the following statement:
 
 ```python
->>> set([t.parent.name for t in text])                                                               
-{'label', 'h4', 'ol', '[document]', 'a', 'h1', 'noscript', 'span', 'header', 'ul', 'html', 'section', 'article', 'em', 'meta', 'title', 'body', 'aside', 'footer', 'div', 'form', 'nav', 'p', 'head', 'link', 'strong', 'h6', 'br', 'li', 'h3', 'h5', 'input', 'blockquote', 'main', 'script', 'figure'}
+set([t.parent.name for t in text])
+
+# {'label', 'h4', 'ol', '[document]', 'a', 'h1', 'noscript', 'span', 'header', 'ul', 'html', 'section', 'article', 'em', 'meta', 'title', 'body', 'aside', 'footer', 'div', 'form', 'nav', 'p', 'head', 'link', 'strong', 'h6', 'br', 'li', 'h3', 'h5', 'input', 'blockquote', 'main', 'script', 'figure'}
 ```
 
 There are a few items in here that we likely do not want:
@@ -95,7 +96,7 @@ for t in text:
 ```
 
 
-# Improvements
+## Improvements
 
 If you look at `output` now, you'll see that we have some things we don't want.
 
