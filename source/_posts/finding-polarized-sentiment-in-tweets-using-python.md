@@ -4,7 +4,7 @@ date: 2019-02-14 22:33:48
 tags:
 banner_lg: banner-lg.jpg
 banner_sm: banner-sm.jpg
-seo_description:
+seo_description: This tutorial shows how to fetch all replies to a tweet. It is the first part of a series which analyzes tweets containing polarized sentiment.
 ---
 
 
