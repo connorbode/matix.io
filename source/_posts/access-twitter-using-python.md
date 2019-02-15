@@ -1,6 +1,6 @@
 ---
 title: Access your Twitter feed using Python
-banner_lg: banner-lg.jpg
+banner_lg: banner-lg-2.jpg
 banner_sm: banner-sm.jpg
 seo_description: >-
   Use Python to programmatically fetch your Twitter feed and perform other
