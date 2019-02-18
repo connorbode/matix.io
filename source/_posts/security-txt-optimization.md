@@ -8,7 +8,7 @@ tags:
 ---
 
 
-In the last post, [we wrote a naive script to check which of the Alexa Top 1m sites were using the security.txt protocol](security-txt).
+In the last post, [we wrote a naive script to check which of the Alexa Top 1m sites were using the security.txt standard](security-txt).
 
 This script won't be used because it might take around 115 days to run. It needs to be optimized.
 

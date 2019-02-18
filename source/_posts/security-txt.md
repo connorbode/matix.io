@@ -10,7 +10,7 @@ tags:
 ---
 
 
-[Scott Helme's security.txt](https://scotthelme.co.uk/say-hello-to-security-txt/) is an interesting concept. It was proposed around 1 year ago, on January 1st, 2018.
+[security.txt](https://securitytxt.org/) is an interesting concept. It was proposed around 1 year ago, on January 1st, 2018.
 
 After 1 year, how many sites have adopted it?
 
