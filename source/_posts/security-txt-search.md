@@ -86,7 +86,7 @@ function refresh() {
 		var filterKey
 		var isEmpty = function (path, fk) {
 			if (!data[key][path]) return true;
-			if (data[key][path][fk].length === undefined) {
+			if (!data[key][path][fk] || data[key][path][fk].length === undefined) {
 				return data[key][path][fk] === null;
 			} else {
 				return data[key][path][fk].length === 0;
