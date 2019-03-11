@@ -10,12 +10,13 @@ seo_description:
 
 We spent some time scanning the Alexa top 1 million websites for security.txt records, parsing, and doing some basic indexing; here are the results!
 
-<a href="https://www.indiegogo.com/projects/security-txt-index#/">We're running a crowdfunding campaign to improve this project.</a>  We'd like to:
+<a href="https://www.indiegogo.com/projects/security-txt-index#/">We're running a crowdfunding campaign to improve this project.</a>  We'd like to provide:
 
-- Constantly be searching for new sites using security.txt (not only in Alexa top 1 million)
-- Regularly check discovered security.txt documents for updates
-- Provide statistics on adoption (e.g. percentage of Alexa top 1 million supporting over time)
-- Provide open data for download
+- Live updates to the data
+- Regular updates to discovered security.txt files
+- Regular scans for new security.txt files
+- Expand scanning beyond the top 1,000,000 websites
+- Time series on adoption rates
 
 If you enjoy this project or feel it's useful, let us know on Twitter (<a href="https://twitter.com/matix_io" target="_blank">matix.io</a>, <a href="https://twitter.com/connorbode" target="_blank">connorbode</a>).
 
