@@ -14,13 +14,13 @@ Torrent files contain the metadata required to start downloading data. Underneat
 
 _If you don't have a .torrent file, there's one available on the [Qubes OS download page](https://www.qubes-os.org/downloads/)._
 
-# Decoding the .torrent file
+## Decoding the .torrent file
 
 Torrent files are BEncoded (pronounced "b-encoded"). Most languages have a package available for encoding and decoding the format. 
 
 For Python, you can use the tool [`bencode.py`](https://pypi.org/project/bencode.py/), as follows:
 
-```
+```python
 import bencode
 
 with open('./your-file.torrent') as f: raw_data = f.read()
@@ -33,16 +33,17 @@ There are three important keys in the data dictionary that we will deal with: `i
 
 `announce` and `announce-list` contain the URLs of servers which will help us to find peers.
 
-# Computing the info hash
+
+## Computing the info hash
 
 The info hash is used to identify the torrent on the network. You can compute it as follows:
 
-```
+```python
 import hashlib
 info_hash = hashlib.sha1(bencode.bencode(data['info'])).hexdigest()
 ```
 
-# Finding peers
+## Finding peers
 
 There are two types of announce URLs: UDP and HTTP. The protocols for these URLs are different. [HTTP URLs are documented here](http://www.bittorrent.org/beps/bep_0003.html) and [UDP URLs are documented here](http://www.bittorrent.org/beps/bep_0015.html). The spec ends up being quite complicated; an easier route is to use an already implemented library.
 
@@ -50,7 +51,7 @@ We've had success using [BTDHT, "an implementation of the BitTorrent Distributed
 
 After computing the info hash, you can use the BTDHT library to fetch a list of peers as follows:
 
-```
+```python
 import btdht
 import binascii
 from time import sleep
