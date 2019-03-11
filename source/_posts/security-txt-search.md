@@ -19,6 +19,8 @@ We spent some time scanning the Alexa top 1 million websites for security.txt re
 
 If you enjoy this project or feel it's useful, let us know on Twitter (<a href="https://twitter.com/matix_io" target="_blank">matix.io</a>, <a href="https://twitter.com/connorbode" target="_blank">connorbode</a>).
 
+_If you don't know what security.txt is, check out [securitytxt.org](https://securitytxt.org/)_
+
 Enjoy!
 
 <div class="security-txt-wrapper">
