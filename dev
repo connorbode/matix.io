@@ -1,2 +1,2 @@
 #!/bin/bash
-$(pwd)/node_modules/hexo/bin/hexo --config=_config-dev.yml server
+$(pwd)/node_modules/hexo/bin/hexo --config=_config-dev.yml server 0.0.0.0
