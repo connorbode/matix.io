@@ -221,6 +221,17 @@ body {
 .result {
 	padding: 20px 10px;
 	cursor: pointer;
+	position: relative;
+	border-bottom: 1px solid #eee;
+}
+
+.result::after {
+	content: '>';
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #999;
 }
 
 .result:hover {
