@@ -25,6 +25,12 @@ $header-height-small: 50px;
 	}
 }
 
+@mixin desktop {
+	@media (min-width: #{$width-tablet - 1}) {
+		@content;
+	}
+}
+
 
 a {
 	@mixin link {

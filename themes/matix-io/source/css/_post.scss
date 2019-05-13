@@ -127,4 +127,14 @@
 			}
 		}
 	}
+
+	@include desktop {
+		p {
+			line-height: 25px;
+		}
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
 }
