@@ -16,7 +16,7 @@ Today we'll look into information that can be extracted from an IP address. Here
 - We can do a reverse DNS lookup
 - We can scan the IP to see what ports / services are running
 
-# Geographic information
+## Geographic information
 
 The first step we'll do is to find out where the IP address is located. [GeoLite2 is available free for non-commercial usage](https://dev.maxmind.com/geoip/geoip2/geolite2/), providing location data for IP address ranges.
 
@@ -28,11 +28,11 @@ curl ipinfo.io/<ip_address>
 
 Which  will return you detailed location data.
 
-# ISP information
+## ISP information
 
 We can also run `whois <ipaddress>`. This will provide more detailed output on the Internet Service Provider (ISP) of the IP address.
 
-# Reverse DNS lookup
+## Reverse DNS lookup
 
 A reverse DNS lookup will find domain names associated with an IP address. There are a number of ways to do this. Likely, you'll need to combine all of them.
 
@@ -40,13 +40,13 @@ Using Bing search engine, you can query `ip:<ip_address>` to find all pages that
 
 You can also run `dig +noall +answer -x <ip_address>`. This will return you the domain name that the ISP uses to refer to that IP address.
 
-# Port scan
+## Port scan
 
 You can run a port scan on an IP address using `nmap -sV <ip_address>`. This will make a number of requests to that IP address and you may show up in logs. If you don't want to show up in logs, use Shodan as described below.
 
 This port scan will show open ports on the IP, and `nmap` will attempt to identify the services running on those ports.
 
-# Shodan
+## Shodan
 
 [Shodan](https://shodan.io) is a great tool that will give you all of this information if you just enter an IP address. If you're looking to attain information on a single IP address quick, this is the way to go. 
 
