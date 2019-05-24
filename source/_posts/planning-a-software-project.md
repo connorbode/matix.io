@@ -2,7 +2,7 @@
 title: Planning a software project
 banner_lg: splash-lg.jpg
 banner_sm: splash-sm.jpg
-date: 2019-05-24 01:25:58
+date: 2019-05-14 01:25:58
 tags:
 seo_description:
 ---
