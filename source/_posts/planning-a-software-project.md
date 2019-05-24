@@ -2,11 +2,13 @@
 title: Planning a software project
 banner_lg: splash-lg.jpg
 banner_sm: splash-sm.jpg
-seo_description:
+date: 2019-05-24 01:25:58
 tags:
+seo_description:
 ---
 
-Ever wonder how a software project gets started?  This post goes over how we handle planning your project, taking an exciting idea and preparing it for implementation.
+
+Ever wonder how a software project gets started?  This is how we handle planning your project, taking an exciting idea and preparing it for implementation.
 
 
 ## Who will use your application?
