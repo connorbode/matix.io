@@ -89,3 +89,11 @@ figure.highlight {
     font-weight: bold;
   }
 }
+
+.gutter {
+  padding-right: 10px;
+
+  .line {
+    display: none;
+  }
+}
