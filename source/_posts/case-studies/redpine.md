@@ -1,10 +1,10 @@
 ---
-title: Building an App to help musicia
-seo_description: 
+title: Building an App to help musicians and venues collaborate
+seo_description: We helped the guys at RedPine Music build an app for selling and scanning tickets at their live shows. Swipe or tap to pay, and you're in the door!
 tags:
 layout: case-study
 logo: logo.png
-introduction: RedPine is the first concert crowdbooking platform. Whether you're an artist looking to crowdfund a show, venue looking to boost business or a fan looking to attend unique concerts, we got you!
+introduction: We helped the guys at RedPine Music to build an app for running their live shows. With the app, musicians can sell tickets & merchandise at their shows.  They can also scan & validate presold tickets to their shows.
 ---
 
 ![Screenshot of mobile app development](screenshot1.png)
