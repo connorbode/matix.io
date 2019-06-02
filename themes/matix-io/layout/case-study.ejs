@@ -1,0 +1,22 @@
+---
+layout: layout
+---
+
+<%- include('_partials/header.ejs', {scrollLinks: false}) %>
+<div class="post case-study">
+	<div class="case-study-header">
+		<img src="<%- page.logo %>">
+		<p class="case-study-intro"><%- page.introduction %></p>
+	</div>
+	<div class="case-study-column">
+		<%- page.content %>
+	</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	document.getElementById('need-a-developer').addEventListener('click', function () {
+		Tawk_API.maximize();
+	});
+});
+</script>

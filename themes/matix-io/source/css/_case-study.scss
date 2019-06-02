@@ -1,0 +1,35 @@
+.case-study {
+	margin-bottom: 50px;
+	
+	.case-study-header {
+		text-align: center;
+		padding-top: 200px;
+	}
+
+	.case-study-intro {
+		max-width: 500px;
+		margin: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		font-family: $font-family;
+		font-weight: lighter;
+		font-size: 20px;
+		line-height: 31px;
+	}
+
+	.case-study-column {
+		max-width: 800px;
+		margin: auto;
+		font-family: $font-family;
+		font-weight: lighter;
+		font-size: 20px;
+
+		p {
+			line-height: 31px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
