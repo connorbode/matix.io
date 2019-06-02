@@ -5,24 +5,23 @@
 		max-width: 1000px;
 		margin: auto;
 		position: relative;
-		height: 400px;
+		display: flex;
+		flex-direction: column-reverse;
 	}
 
 	.splash {
-		width: 61.8%;
-		height: 100%;
+		width: 800px;
+		height: 400px;
 		top: 0;
-		position: absolute;
 		right: 0;
-	}
-
-	.splash, .splash div {
-		border-radius: 10px;
+		margin: auto;
 	}
 
 	.meta {
+		margin: auto;
+		text-align: center;
 		padding: 20px;
-		width: 38.2%;
+		width: 50%;
 		height: 100%;
 		margin-top: $header-height;
 		display: flex;
@@ -43,18 +42,19 @@
 			font-weight: 100;
 			font-family: $font-family;
 			margin-bottom: 50px;
+			margin-top: 15px;
+			border-top: 1px solid #eee;
+			padding-top: 15px;
 		}
 	}
 
 	.wrapper {
 		margin: auto;
 		max-width: 800px;
-		margin-top: 50px;
+		margin-top: 20px;
 		background: white;
 		padding: 5px 30px;
 		font-family: $font-family;
-		box-shadow: 1px 1px 2px #777;
-		box-sizing: border-box;
 		border-radius: 10px;
 
 		.content {
@@ -64,11 +64,26 @@
 			h2 {
 				font-weight: normal;
 				margin-top: 30px;
-				border-bottom: 1px solid #efefef;
+				font-size: 30px;
 			}
 
 			ul {
 				padding-left: 25px;
+			}
+
+
+			li {
+				font-size: 20px;
+				margin-bottom: 5px;
+			}
+
+			p {
+				line-height: 31px;
+				font-size: 20px;
+			}
+
+			code {
+				font-size: 15px;
 			}
 		}
 	}

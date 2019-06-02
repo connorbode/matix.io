@@ -156,5 +156,45 @@
 				gtag('config', 'UA-19253381-10');
 			}
 		</script>
+
+		<footer>
+			<div>
+				<div class="footer-title">matix.io</div>
+				<div class="footer-subtitle">A software development company</div>
+			</div>
+			<div class="footer-contact">
+				<div>6830 av. du Parc, Unit 420F, Montréal, QC, Canada</div>
+				<div id="footer-email"></div>
+				<div id="footer-tel"></div>
+			</div>
+		</footer>
+
+		<script>
+			var get = function (id) {
+				return document.querySelector(id);
+			}
+
+			var decode = function (input) {
+				var output = '';
+				for (var i = 0; i < input.length; i += 1) {
+					output += String.fromCharCode(input[i]);
+				}
+				return output;
+			}
+
+			var email = decode([105, 110, 102, 111, 64, 109, 97, 116, 105, 120, 46, 105, 111]);
+			var phone = decode([49, 53, 49, 52, 51, 53, 56, 48, 55, 53, 50]);
+			var phonePretty = decode([43, 49, 45, 53, 49, 52, 45, 51, 53, 56, 45, 48, 55, 53, 50]);
+
+			var emailLink = document.createElement('a');
+			emailLink.href = 'mailto:' + email;
+			emailLink.innerText = email;
+			get('#footer-email').appendChild(emailLink);
+
+			var phoneLink = document.createElement('a');
+			phoneLink.href = 'tel:' + phone;
+			phoneLink.innerText = phonePretty;
+			get('#footer-tel').appendChild(phoneLink);
+		</script>
 	</body>
 </html>

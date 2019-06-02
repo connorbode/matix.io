@@ -317,6 +317,57 @@ body {
 		}
 	}
 
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1200px;
+		margin: auto;
+		border-top: 2px solid #eee;
+		border-bottom: 2px solid #eee;
+		padding: 20px;
+		margin: 100px auto;
+
+		.footer-title {
+			font-family: 'Roboto';
+			font-weight: lighter;
+			font-size: 25px;
+			letter-spacing: 3px;
+		}
+
+		.footer-subtitle {
+			font-weight: bold;
+			font-family: 'Roboto';
+			font-size: 15px;
+			margin-top: 7px;
+		}
+
+		.footer-title, .footer-subtitle {}
+
+		.footer-contact {
+			text-align: right;
+			font-family: 'Roboto';
+			font-weight: lighter;
+
+			a {
+				text-decoration: none;
+			}
+
+			div {
+				margin-top: 5px;
+			}
+		}
+
+		@include tablet {
+			flex-direction: column;
+
+			.footer-title, .footer-subtitle, .footer-contact {
+				text-align: center;
+			}
+		}
+	}
+
 	.page-intro {
 		height: 100%;
 		width: 100%;
