@@ -19,7 +19,7 @@ There are many questions, and often the lack of organization leaves those questi
 
 RedPine needed to build a mobile app for use at their live shows. They had two major requirements: they needed to be able to scan & validate tickets sold via their web platform; and they need to be able to sell tickets & merchandise at their shows. 
 
-The app had to be secure: fraudsters couldn't be allowed to show fake tickets and get into shows for free.  But the solution would also have to be fast, as an app that took too long to scan tickets would leave impatient patrons waiting to get into the bar, venues losing sales on drinks, and RedPine potentially losing deals.
+The app had to be secure: fraudsters couldn't be allowed to show fake tickets and get into shows for free.  But the solution would also have to be fast, as an app that took too long to scan tickets would leave impatient patrons waiting to get into the bar, the bar losing sales on drinks, and RedPine potentially losing a deal.
 
 Additionally, RedPine wanted their musicians and venues to be able to coordinate shows using the app.  RedPine offers a feature called _Show Hub_ on their web platform which helps everyone involved in a show to plan and coordinate. But they were having one major problem: because they had to log into Show Hub to check their messages, users were missing important messages. Our job was to replicate Show Hub in the mobile app so users would be able to plan from their phone and receive notifications when there were updates.
 
