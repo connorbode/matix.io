@@ -1,10 +1,11 @@
 ---
-title: Building an App to help musicians and venues collaborate
+title: Building an app to help musicians and venues collaborate
 seo_description: We helped the guys at RedPine Music build an app for selling and scanning tickets at their live shows. Swipe or tap to pay, and you're in the door!
 tags:
 layout: case-study
 logo: logo.png
 introduction: We helped the guys at RedPine Music to build an app for running their live shows. With the app, musicians can sell tickets & merchandise at their shows.  They can also scan & validate presold tickets to their shows.
+banner_sm: banner-sm.png
 ---
 
 ![Screenshot of mobile app development](screenshot1.png)
