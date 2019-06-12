@@ -59,7 +59,7 @@
 		border-radius: 10px;
 
 		.content {
-			font-family: Helvetica Neue, Arial;
+			font-family: 'Roboto';
 			font-weight: 300;
 
 			h2 {
@@ -88,7 +88,16 @@
 			}
 
 			code {
-				font-size: 15px;
+				font-size: 18px;
+				background: #002b36;
+				color: white;
+				padding: 2px 5px;
+			}
+
+			a code {
+				background: none;
+				color: black;
+				padding: 0;
 			}
 		}
 	}
