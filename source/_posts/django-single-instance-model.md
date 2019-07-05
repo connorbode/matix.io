@@ -8,7 +8,7 @@ seo_description:
 ---
 
 
-_Looking for the project?  Check it out [on Github](https://github.com/matix-io/django-single-instance-model)._
+_Looking for the project?  Check out [`django-single-instance-model` on Github](https://github.com/matix-io/django-single-instance-model)._
 
 ---
 
