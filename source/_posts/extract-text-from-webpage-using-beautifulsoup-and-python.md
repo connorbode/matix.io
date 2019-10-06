@@ -8,7 +8,7 @@ seo_description: >-
 date: 2019-02-12 11:31:28
 tags:
 ---
-
+<div class="scrolling-banner"><a href="https://www.scraperapi.com/?fp_ref=a12iq01kjnlja" rel="nofollow">Need your scraper to bypass IP blocking or CAPTCHAs?</a></div>
 
 If you're going to spend time crawling the web, one task you might encounter is stripping out visible text content from HTML.
 
@@ -154,3 +154,27 @@ If you're just extracting text from a single site, you can probably look at the 
 Unfortunately, the internet is a messy place and you'll have a tough time finding consensus on HTML semantics.
 
 Good luck!
+
+<style>
+.scrolling-banner {
+  background-color: #002b36;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -25px;
+  padding: 20px;
+  position: sticky;
+  top: 50px;
+  border-bottom: 1px solid #fff;
+
+}
+
+.scrolling-banner a {
+  color: white;
+  text-decoration: none;
+}
+
+html, body {
+  overflow-x: unset !important;
+}
+</style>
