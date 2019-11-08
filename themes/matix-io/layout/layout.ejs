@@ -126,7 +126,9 @@
 	    s1.src='https://embed.tawk.to/58a323eef90be509fee73211/default';
 	    s1.charset='UTF-8';
 	    s1.setAttribute('crossorigin','*');
-	    s0.parentNode.insertBefore(s1,s0);
+	    if (window.location.search.indexOf('ophqt') === -1) {
+	   	    s0.parentNode.insertBefore(s1,s0);
+	    }
 	    })();
 	    </script>
 	    <!--End of Tawk.to Script-->
@@ -195,6 +197,46 @@
 			phoneLink.href = 'tel:' + phone;
 			phoneLink.innerText = phonePretty;
 			get('#footer-tel').appendChild(phoneLink);
+		</script>
+
+		<script>
+		  (function(o, u, t, p, l, a, y, _, h, q) {
+		    if (!o[p] || !o[p]._q) {
+		      for (; _ < y.length; ) l(a, y[_++]);
+		      q = u.getElementsByTagName(t)[0];h = u.createElement(t);h.async = 1;
+		      h.src = "https://cx.outplayhq.com/js/build.min.js";q.parentNode.insertBefore(h, q);o[p] = a;
+		    }
+		  })(window,document,"script","outplayhq",function(g, r) {
+		      g[r] = function() {g._q.push([r, arguments]);};
+		  },{ _q: [], _v: 1 },["init"],0);
+		  outplayhq.init("03b25dfb48558dace7f9e6805071ebb4");
+
+      (function () {
+	      function removeBranding() {
+          var iframe = document.querySelector('#av-referral-iframe');
+          var style = document.createElement('style')
+          if (iframe) {
+            style.innerText = '.outplay-meeting-book-container, .outplay-powered-by-container { display: none; }';
+            iframe.contentDocument.querySelector('head').appendChild(style);
+          } else {
+            setTimeout(removeBranding, 100);
+          }
+        };
+
+        removeBranding();
+        
+        function addClickRemoval() {
+          var iframe = document.querySelector('#av-referral-icon-iframe');
+          if (iframe) {
+            iframe.contentDocument.querySelector('html').addEventListener('click', removeBranding);
+          } else {
+            setTimeout(addClickRemoval, 100);
+          }
+        }
+    
+        addClickRemoval();
+      })();
+        
 		</script>
 	</body>
 </html>

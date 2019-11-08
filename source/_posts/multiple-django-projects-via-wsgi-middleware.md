@@ -25,7 +25,7 @@ What we're going to do is build a WSGI middleware for running multiple Django pr
 
 **Why the f*&# would you want to do that??**
 
-This setup allows you to run multiple projects on the same nginx server and gunicorn process.  That's two configuration steps you can skip.  You can also use the same database process to back your process.
+This setup allows you to run multiple projects on the same nginx server and gunicorn process.  That's two configuration steps you can skip.  You can also use the same services (database, cache, etc.) to back your projects.
 
 In a normal Django setup, Gunicorn will run Django's `wsgi.py` file.  What's in a WSGI file?  It's a single function that accepts an HTTP request and returns a response.  That's it.
 
