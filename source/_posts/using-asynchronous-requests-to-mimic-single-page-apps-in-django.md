@@ -194,6 +194,7 @@ In `templates/base.html`:
     <script src="/static/hook.js"></script>
   </body>
 </html>
+{% endif %}
 ```
 
 In `templates/page-1.html`:
