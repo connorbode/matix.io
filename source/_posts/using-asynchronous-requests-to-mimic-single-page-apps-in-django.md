@@ -10,7 +10,7 @@ tags:
 ---
 
 
-_Below, I'll provide a brief tutorial on how we can achieve the functionality in Django.  I've also created an [example Django project for the tutorial here on Github](https://github.com/matix-io/django-webapp-async-example)._
+_I've created an [example Django project for the tutorial here on Github](https://github.com/matix-io/django-webapp-async-example) to demonstrate what's discussed in this tutorial._
 
 Single Page Apps (SPAs) built on frameworks like Vue, React, and Angular, create excellent user-experiences.  The apps are built fully on the client side, so for any action the user performs, there will be immediate feedback.  Instead of loading a new page when a link is clicked or a form is submitted, the SPA will perform HTTP requests asynchronously and update the view.  
 
