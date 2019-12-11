@@ -128,7 +128,7 @@ function hook(scope) {
 
         // asynchronously load the next page
         // if you want to display a loading spinner, now would be the time
-        fetch(anchor.href)
+        fetch(url)
           .then(function (res) {
             return res.text();
           })
