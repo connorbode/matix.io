@@ -14,8 +14,6 @@ Apple has done a great job of locking in developers by ensuring the Xcode toolch
 
 Before you get too excited, this method still requires that you have a MacOS machine to build your project on. 
 
-__[Can't afford a MacOS server? We're working on an affordable solution & we would love your input.](#)__
-
 
 
 ## Getting started
