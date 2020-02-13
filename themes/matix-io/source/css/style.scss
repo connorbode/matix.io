@@ -311,6 +311,7 @@ body {
 			@include header-small;
 
 			.header-left {
+        margin-left: 15px;
 				img {
 					padding: 0 5px;
 				}
