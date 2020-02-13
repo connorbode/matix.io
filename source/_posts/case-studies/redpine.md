@@ -4,6 +4,7 @@ seo_description: We helped the guys at RedPine Music build an app for selling an
 tags:
 layout: case-study
 logo: logo.png
+logo_style: "width: 200px"
 introduction: We helped the guys at RedPine Music to build an app for running their live shows. With the app, musicians can sell tickets & merchandise at their shows.  They can also scan & validate presold tickets to their shows.
 banner_sm: banner-sm.png
 ---
