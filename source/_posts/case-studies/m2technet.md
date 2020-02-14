@@ -7,6 +7,7 @@ logo: heading.png
 logo_style: "width: 200px"
 introduction: We were subcontracted to implement a custom website design for m2technet.ca’s new website. The result? A beautiful, fast, new website with all of their old content ported over.
 banner_sm: banner-sm.png
+hide: true
 ---
 
 ![img](home-laptop.png)
