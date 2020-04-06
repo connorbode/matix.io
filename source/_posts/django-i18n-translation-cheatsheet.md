@@ -58,7 +58,7 @@ urlpatterns = [
 ]
 ```
 
-Next, you'll want to edit your main template to add in the langauge switcher. 
+Next, you'll want to edit your main template to add in the language switcher. 
 
 ```html
 {% load i18n %}
