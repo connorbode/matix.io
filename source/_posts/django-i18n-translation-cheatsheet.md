@@ -62,13 +62,12 @@ Next, you'll want to edit your main template to add in the language switcher.
 
 ```html
 {% load i18n %}
-  {% csrf_token %}
   {% get_current_language as LANGUAGE_CODE %}
   {% get_available_languages as LANGUAGES %}
   {% for language in LANGUAGES %}
     {% if language.0 != LANGUAGE_CODE %}
     <form action="{% url 'set_language' %}" method="post">
-      {{ csrf_token }}
+      {% csrf_token %}
       <input type="hidden" name="language" value="{{ language.0 }}">
       <button type="submit">{{ language.1 }}</button>
     {% endif %}
