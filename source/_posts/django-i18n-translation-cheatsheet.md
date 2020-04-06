@@ -40,7 +40,7 @@ LANGUAGES = [
 LANGUAGE = LANGUAGES[0][0]
 
 # install the LocaleMiddleware in between SessionMiddleware and CommonMiddleware
-INSTALLED_APPS = [
+MIDDLEWARE = [
   ...
   'django.contrib.sessions.middleware.SessionMiddleware',
   'django.middleware.locale.LocaleMiddleware',
