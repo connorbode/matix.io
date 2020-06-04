@@ -12,9 +12,25 @@ tags:
 
 Apple has done a great job of locking in developers by ensuring the Xcode toolchain can only run on MacOS products. For people who prefer working on Linux machines, this is very frustrating. We wanted a way to run our builds from our Linux computers.
 
-Before you get too excited, this method still requires that you have a MacOS machine to build your project on. 
+We managed to find a solution for building from a Linux computer, however it still requires using a MacOS server in the backend.
 
+<div style="background: #eee; border-radius: 6px; margin-top: 50px; margin-bottom: 50px;">
+<div style="max-width: 720px; margin: auto; padding: 1.25rem; padding-bottom: 0; box-sizing:border-box;">
+<h2>We're working to make things easier.</h2>
+<p>Before you get too excited, <b>the methods described in this article still require that you have a MacOS machine to build your project on</b>. That means additional infrastructure to pay for and manage (which is likely what you're trying to avoid in the first place).</p>
+<h2>Introducing RNBuildAnywhere</h2>
+<p>At matix.io, we're currently working on a <b>service which manages all the technical difficulties described in this article for you</b>. How does it work?</p>
 
+```bash
+npx rnbuildanywhere build
+```
+
+<p>That's it. Your project is shipped off to a build server and you're returned a file to install on your iPhone, so you can continue building and not worry about the technical difficulties.</p>
+<p><b>Interested? Fill out the form below and we'll be in touch to talk about how we can work together.</b></p>
+</div>
+
+<iframe src="https://dash.matix.io/frm/DzXLc6qZ9QoKFPm" style="border:none; width: 100%; height: 420px" scrolling="no"></iframe>
+</div>
 
 ## Getting started
 
