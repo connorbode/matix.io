@@ -45,7 +45,7 @@ npx rnbuildanywhere build
 
 ### SSH Access
 
-First thing's first: you're going to need to be able to SSH into the Mac from your Linux machine. That means you'll need to enable remote connections on the Mac and add your public SSH key to the `~/.ssh/authorized_keys` file.
+First thing's first: you're going to need to be able to SSH into the Mac from your Windows machine. That means you'll need to enable remote connections on the Mac and add your public SSH key to the `~/.ssh/authorized_keys` file.
 
 We won't cover the SSH setup in this tutorial, but there are many resources on the internet which can help you do so.
 
@@ -228,7 +228,7 @@ Finally, here's the fun part! Here are the steps for building:
 2. Updating the project on the MacOS server. On the first build, this will do nothing, but on subsequent builds we'll upload any changes.
 3. Executing the build on the MacOS server.
 4. Downloading the built .ipa file.
-5. Installing the built .ipa file to the iPhone, connected to your Linux computer.
+5. Installing the built .ipa file to the iPhone, connected to your Windows computer.
 
 
 ### Uploading the project to the MacOS server
@@ -308,7 +308,7 @@ scp mac:~/reactnativetest/ios/reactnativetest.ipa .
 
 ### Installing the .ipa file
 
-Plug in your phone, and grant the Linux computer permission to access it.  Then, simply run
+Plug in your phone, and grant the Windows computer permission to access it.  Then, simply run
 
 ```bash
 ideviceinstaller -i reactnativetest.ipa
