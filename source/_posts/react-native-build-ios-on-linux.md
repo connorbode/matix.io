@@ -14,6 +14,8 @@ Apple has done a great job of locking in developers by ensuring the Xcode toolch
 
 We managed to find a solution for building from a Linux computer, however it still requires using a MacOS server in the backend.
 
+[Want to build React Native for iOS, from Windows?](/react-native-build-ios-on-windows)
+
 <div style="background: #eee; border-radius: 6px; margin-top: 50px; margin-bottom: 50px;">
 <div style="max-width: 720px; margin: auto; padding: 1.25rem; padding-bottom: 0; box-sizing:border-box;">
 <h2>We're working to make things easier.</h2>
